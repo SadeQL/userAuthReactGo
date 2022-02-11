@@ -1,14 +1,14 @@
 package main
 
 import (
-	"go_auth/donne"
+	"go_auth/database"
 	"go_auth/routes"
 
 	"github.com/gofiber/fiber/v2"
 )
 
 func main() {
-	donne.Connect()
+	database.Connect()
 
 	app := fiber.New()
 
